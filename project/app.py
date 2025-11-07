@@ -66,8 +66,9 @@ def update_incident(incident_id):
     incident.status = new_status
     session.commit()
     session.close()
-    return jsonify({"message": "Статус обновлён", "id": incident_id, "Новый статус": new_status})
+    return jsonify({"message": "Статус обновлён", "id": incident_id, "new_status": new_status})
 
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
+
