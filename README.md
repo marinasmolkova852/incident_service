@@ -2,6 +2,16 @@
 
 <h2>Команды в терминале Linux для запуска и проверки:</h2>
 
+Добавляем в корневую папку .env файл с данными для БД
+```bash
+# .env
+DB_USER=root
+DB_PASS=pass
+DB_NAME=incidents_db
+DB_HOST=db
+DB_PORT=3306
+```
+
 Сборка проекта и запуск контейнеров
 ```bash
 docker compose up -d --build
